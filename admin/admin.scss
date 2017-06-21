@@ -1,0 +1,104 @@
+body{
+  background-color:white;
+}
+.container-body{
+  position: relative;
+  top:0;
+  height: 100%;
+}
+.container-logo{
+  position: fixed;
+  height: 90px;
+  z-index: 2;
+  width:100%;
+  background:#f6f9f9;
+  top:0;
+  padding:20px 130px 50px 130px;
+  img{
+    margin-bottom: 30px;
+  }
+  .nav{
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li{
+      display: inline;
+      .logout-fa{
+        font-size: 20px;
+      }
+    }
+  }
+}
+.container-content{
+  padding-top: 90px;
+}
+.content{
+  margin-top: 70px;
+}
+//*****************LOGIN
+.checkbox{
+  float: left;
+}
+.submit{
+  float: right;
+}
+.login-form{
+  border:1px solid #2b669a; border-radius: 1px;
+  padding: 20px 10px 40px 10px;
+  margin-top: 30px;
+
+}
+
+/********button************/
+
+.banners, .showcase, .staywithat, .simple{
+  .btn-edit{
+    float:left;
+    margin-top:10px;
+    padding:10px 15px;
+  }
+  .btn-add{
+    margin:15px;
+    padding:10px 25px;
+  }
+  .btn-del{
+    float:right;
+    margin-top:10px;
+    padding:10px 15px;
+
+  }
+}
+.modal-body{
+  img{
+    width:99%;
+    margin-bottom: 30px;
+  }
+}
+/*****************fontawesome*****************/
+.fa-common{
+  .trash-icon{
+    font-size: 20px;
+  }
+  .plus-fa{
+    font-size: 25px;
+  }
+  .fa-editbanner{
+    font-size: 20px;
+  }
+}
+/***************edit banner**********/
+.input-description{
+  height: 100px;
+  padding-bottom: 50px;
+}
+.fa-editbanner{
+  padding-left:5px;
+}
+//*********social***********
+.social{
+  margin-top:50px;
+  .link{
+    border:none;
+  }
+}

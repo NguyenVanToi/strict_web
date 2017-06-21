@@ -1,0 +1,323 @@
+/*------------------size, padding,.....---------------*/
+@mixin padding($top, $right, $bottom, $left){
+  padding: $top $right $bottom $left;
+}
+@mixin margin-top-left($top, $left){
+  margin-top:$top;
+  margin-left:$left;
+}
+@mixin pos($top, $left){
+  top:$top;
+  left:$left;
+}
+@mixin bg-color-white{
+  background-color: white;
+}
+@mixin color-white(){
+  color:white;
+}
+@mixin bg-color-body(){
+  background:#f6f9f9;
+}
+@mixin color-text-p(){
+  color:#999999;
+}
+%btn-common{
+  background-color: transparent;
+  border:1px solid #2e6da4;
+  @include padding(15px, 30px, 15px, 30px);
+  &:hover{
+    opacity: 0.8;
+    background: rgba(44, 172, 247, 0.8);
+  }
+}
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.color-body{
+  font-family: 'Lato', sans-serif;
+  @include bg-color-body;
+}
+.container-body{
+  position: relative;
+  top:0;
+  height: 100%;
+}
+.container-logo{
+  position: fixed;
+  height: 90px;
+  z-index: 2;
+  width:100%;
+  top:0;
+  @include padding(20px, 130px, 50px, 130px);
+  @include bg-color-body;
+}
+.wrapper{
+  @include padding(50px, 100px, 60px, 100px);
+}
+.container-fluid{
+  padding-left:0px;
+  padding-right: 0px;
+}
+.banner{
+  position: relative;
+  margin-top:90px;
+}
+.banner{
+  .banner-title{
+    position: absolute;
+    @include pos(40%, 50%);
+    @include margin-top-left(-95px, -220px);
+    hr{
+      height:2px;
+      display: block;
+      width:100%;
+      margin:0 auto;
+      background: #15a4fa;
+      border:0;
+    }
+    h1{
+      @include color-white();
+    }
+    p{
+      font-size: 18px;
+      padding-top:20px;
+      @include color-white();
+    }
+  }
+  .banner-content{
+    position: absolute;
+    padding-top:7%;
+    @include pos(60%, 50%);
+    @include margin-top-left(-67px, -70px);
+    a:hover{
+      transition: all 1s;
+    }
+    .down{
+      display: block;
+      margin-top:10%;
+      padding-top:13%;
+      text-align: center;
+      @include color-white();
+    }
+    .btn-common-banner{
+      @extend %btn-common;
+      margin-top:20px;
+      font-size:18px;
+    }
+  }
+}
+.container-slogan{
+  h2{
+    font-size: 40px;
+  }
+  p{
+    font-size: 19px;
+    @include color-text-p();
+    text-align: justify;
+  }
+}
+/***********************/
+.header-icon{
+  @include bg-color-white();
+  .row-icon{
+    .icon{
+      padding-bottom: 10px;
+      h4{
+        font-size: 23px;
+      }
+      p{
+        font-size:15px;
+        @include color-text-p();
+      }
+      img{
+        padding-top:30px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+/***********************/
+.gallary{
+  display: block;
+  clear:both;
+  padding:60px 0 70px;
+  text-align: center;
+  .des-pic{
+    p{
+      font-size: 18px;
+      @include color-text-p();
+      padding-bottom: 40px;
+    }
+  }
+  .row-pic{
+    .pic{
+      .project{
+        display: none;
+      }
+      img{
+        display:block;
+        width:100%;
+        margin-bottom: 30px;
+        height:auto;
+      }
+      .pic-hover{
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        opacity:0;
+        margin:0 auto 30px;
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        transition: all 0.5s;
+        height: auto;
+        background: rgba(44, 172, 247, 0.8);
+        .pic-icon{
+          a{
+            @include padding(10px, 12px, 10px, 12px);
+            margin-left: 5px;
+            border-radius: 2px;
+            display:inline-block;
+            border:2px solid white;
+            color:white;
+            &:hover{
+              transition: all 1s;
+              color:black;
+              border:2px solid #2d3950;
+            }
+          }
+        }
+        &:hover{
+          opacity:0.8;
+        }
+      }
+    }
+  }
+}
+/***********Modal**********/
+.container-slides{
+  .modal-body{
+    .flex-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width:100%;
+        height:100%;
+        padding-bottom: 20px;
+      }
+      .next,.prev{
+        color: #2b669a;
+        transition: 0.6s ease;
+        //border-radius: 0 3px 3px 0;
+      }
+      .prev{
+        padding:0 5px 0 0;
+        border-radius: 3px 0 0 3px;
+        &:hover{
+          background-color: rgba(0,0,0,0.8);
+        }
+      }
+      .next{
+        padding:0 0 0 5px;
+        border-radius: 3px 0 0 3px;
+        &:hover{
+          background-color: rgba(0,0,0,0.8);
+        }
+      }
+    }
+
+  }
+}
+/************Stay with at***************/
+.stay-wa{
+  width:100%;
+  display:block;
+  background: url(../home/pic/banner3.jpg) no-repeat center;
+  background-size: cover;
+  padding: 70px 0 105px;
+  #err-total{
+    display: block;
+    margin-bottom:15px;
+    border-radius:1px;
+    border-color: red;
+    padding:5px;
+  }
+  h3{
+    font-size:40px;
+    @include color-white();
+  }
+  p{
+    font-size:18px;
+    line-height:23px;
+    margin:15px 40px;
+    padding-bottom: 30px;
+    @include color-text-p();
+  }
+  .form-info{
+    .input-text{
+      margin:0 auto 20px;
+      border-radius:3px;
+      padding-left:20px;
+      height:50px;
+      background-color: transparent;
+      border:1px solid #999999;
+      @include color-white;
+    }
+    .form-message{
+      border-radius:3px;
+      padding-left:20px;
+      padding-bottom:100px;
+      padding-top: 20px;
+      display:block;
+      margin:0 auto 10px;
+      height: 150px;
+      background:none;
+      border:1px solid #999999;
+      @include color-white();
+    }
+    .form-submit {
+      margin: 0px auto;
+      text-align: left;
+      @include color-white();
+      #form-checkbox {
+        float: left;
+        margin-top: 30px;
+      }
+      #btn-submit{
+        float:right;
+        @include padding(10px, 50px, 10px, 50px);
+        margin-top: 20px;
+        @extend %btn-common;
+
+      }
+    }
+  }
+}
+/*******footer****************/
+.footer{
+  .footer-row{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    float:left;
+    @include color-text-p();
+  }
+  .footer-img{
+    margin-top:20px;
+    text-align:right;
+    a{
+      width:35px;
+      text-align: center;
+      display:inline-block;
+      height: 35px;
+      padding-top:5px;
+      border: 1px solid #2e6da4;
+      @include color-white();
+      background: #2e6da4;
+    }
+  }
+}

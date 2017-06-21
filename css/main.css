@@ -1,0 +1,344 @@
+/*------------------size, padding,.....---------------*/
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+/*body*/
+body{
+    font-family: 'Lato', sans-serif;
+}
+/*container-body*/
+.container-body{
+    position: relative;
+    top:0;
+    height: 100%;
+}
+/*logo*/
+.container-logo{
+    position: fixed;
+    height: 90px;
+    z-index: 2;
+    width:100%;
+    top:0;
+    padding:20px 130px 50px 130px
+}
+/*common*/
+.wrapper{
+    padding: 50px 100px 60px 100px;
+}
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+/*banner*/
+.banner{
+    position: relative;
+    margin-top: 90px;
+}
+.banner-title{
+    position: absolute;
+    top:40%;
+    left:50%;
+    margin-top: -95px;
+    margin-left:-220px;
+}
+.banner-content{
+    position: absolute;
+    top:60%;
+    left:50%;
+    margin-top:-67px;
+    margin-left: -70px;
+}
+.banner-content a:hover{
+    transition: all 1s;
+}
+.banner-content .down{
+    margin-top:10%;
+}
+.btn-common{
+    margin-top:20px;
+    font-size:18px;
+}
+#btn-cta{
+    padding:15px 30px 15px 30px;
+}
+.btn-common:hover {
+    opacity: 0.8;
+}
+.banner-title hr{
+    height: 2px;
+    display:block;
+    width:100%;
+    margin:0 auto;
+}
+.banner-content{
+    padding-top:7%;
+}
+.banner-title p{
+    font-size: 18px;
+    padding-top: 20px;
+}
+.banner-content .down{
+    display: block;
+    padding-top: 13%;
+    text-align:center;
+    color: white;
+}
+/**********slogan**********/
+.container-slogan h2{
+    font-size: 40px;
+}
+.container-slogan p{
+    font-size: 19px;
+}
+/***********icon************/
+.icon{
+    padding-bottom: 10px;
+}
+.icon h4 {
+    font-size: 23px;
+}
+.icon p{
+    font-size: 15px;
+}
+.icon img{
+    padding-top: 30px;
+    padding-bottom:20px;
+}
+/*six-pic*/
+.des-pic{
+    padding-bottom: 40px;
+}
+.gallary{
+    display: block;
+    clear: both;
+}
+.clearfix {
+    display: inline-block;
+}
+#gallary-size{
+    padding:60px 0 70px;
+    text-align:center;
+}
+
+.row-pic .pic img{
+    display: block;
+    width:99%;
+    margin-bottom: 30px;
+}
+.pic .pic-hover{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    margin: 0 auto 30px;
+}
+.pic-icon a{
+    padding: 10px 12px;
+    margin-left: 5px;
+    border-radius:2px;
+    display:inline-block;
+}
+.pic-icon a:hover {
+    transition: all 1s;
+}
+.pic:hover .pic-hover{
+    opacity: 0.8;
+}
+.pic-hover{
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+/*********slides********/
+.container-slides{
+    position: relative;
+    margin:auto;
+}
+
+.next, .prev{
+    cursor: pointer;
+    position: absolute;
+    top:37%;
+    width:auto;
+    color: blue;
+    font-weight: bold;
+    font-size: 18px;
+    padding:16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.prev{
+    left:0;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+/********Stay with at*******/
+#ft-swa{
+    background: url(../home/pic/banner3.jpg) no-repeat center;
+    display: block;
+    background-size: cover;
+    padding: 70px 0 105px;
+}
+.stay-wa{
+    width:100%;
+    display: block;
+}
+#err-total{
+    display:block;
+    font-size: 17px;
+    margin-bottom:15px;
+    border-radius:1px;
+    border-color: red;
+    padding:5px;
+}
+#ft-swa h3{
+    font-size:40px;
+}
+#ft-swa p{
+    font-size:15px;
+    line-height:23px;
+    margin:15px 40px;
+    padding-bottom: 30px;
+}
+.form-info .input-text{
+    margin:0 auto 20px;
+    border-radius:3px;
+    padding-left:20px;
+    height:50px;
+}
+.form-info .form-message{
+    border-radius:3px;
+    padding-left:20px;
+    padding-bottom:100px;
+    padding-top: 20px;
+    display:block;
+    margin:0 auto 10px;
+    height: 150px;
+}
+.form-info .form-submit {
+    margin: 0 auto;
+    text-align: left;
+}
+
+#form-checkbox {
+    float: left;
+    margin-top: 30px;
+}
+#btn-submit{
+    float:right;
+    padding: 10px 50px 10px 50px;
+    margin-bottom: 20px;
+}
+
+ .footer-img{
+     margin-top:20px;
+     text-align:right;
+ }
+ .footer-row{
+     padding-top: 30px;
+     padding-bottom: 30px;
+     float:left;
+ }
+.footer-img a{
+    width:35px;
+    text-align: center;
+    display:inline-block;
+    height: 35px;
+    padding-top:5px;
+}
+/*---------------------color---------------------*/
+    /*body*/
+    body{
+        background: #f6f9f9;
+    }
+    /*logo*/
+    .container-logo{
+        background-color: #f6f9f9;
+    }
+    /*banner*/
+    .btn-common{
+        background-color: transparent;
+        border:1px solid #2e6da4;
+    }
+    .banner-title h1{
+        color:white;
+    }
+    .banner-title p{
+        color:white;
+    }
+    .btn-common:hover {
+        background: rgba(44, 172, 247, 0.8);
+    }
+    .banner-title hr{
+        background: #15a4fa;
+        border:0px;
+    }
+    /*slogan*/
+    .container-slogan p{
+        color: #999999;
+    }
+    /*icon*/
+    .header-icon{
+        background-color: white;
+    }
+    .icon p{
+        color: #999999;
+    }
+    .pic-icon a{
+        border:2px solid white;
+        color:white;
+    }
+    /*six-pic*/
+    .des-pic p{
+        color: #999999;
+    }
+    #gallary-size{
+        background:#f6f9f9;
+    }
+    .pic-icon a:hover {
+        color:black;
+        border:2px solid #2d3950;
+    }
+    .pic-hover{
+        background: rgba(44, 172, 247, 0.8);
+    }
+    /*stay with at*/
+    #ft-swa h3{
+        color:white;
+    }
+    #ft-swa p{
+        color:#999999;
+    }
+    .form-info .input-text{
+        background-color: transparent;
+        border:1px solid #999999;
+        color:white;
+    }
+    .form-info .form-message{
+        background:none;
+        border:1px solid #999999;
+        color:white;
+    }
+    .form-info .form-submit {
+        color: #ffffff;
+    }
+    /*footer*/
+    .footer-row{
+        color:#999999;
+    }
+    .footer-img a {
+        border: 1px solid #2e6da4;
+        color: white;
+        background: #2e6da4;
+    }
+
+

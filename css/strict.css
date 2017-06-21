@@ -1,0 +1,242 @@
+/*------------------size, padding,.....---------------*/
+.banner .banner-content .btn-common-banner, .stay-wa .form-info .form-submit #btn-submit {
+  background-color: transparent;
+  border: 1px solid #2e6da4;
+  padding: 15px 30px 15px 30px; }
+  .banner .banner-content .btn-common-banner:hover, .stay-wa .form-info .form-submit #btn-submit:hover {
+    opacity: 0.8;
+    background: rgba(44, 172, 247, 0.8); }
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+.color-body {
+  font-family: 'Lato', sans-serif;
+  background: #f6f9f9; }
+
+.container-body {
+  position: relative;
+  top: 0;
+  height: 100%; }
+
+.container-logo {
+  position: fixed;
+  height: 90px;
+  z-index: 2;
+  width: 100%;
+  top: 0;
+  padding: 20px 130px 50px 130px;
+  background: #f6f9f9; }
+
+.wrapper {
+  padding: 50px 100px 60px 100px; }
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.banner {
+  position: relative;
+  margin-top: 90px; }
+
+.banner .banner-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-top: -95px;
+  margin-left: -220px; }
+  .banner .banner-title hr {
+    height: 2px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    background: #15a4fa;
+    border: 0; }
+  .banner .banner-title h1 {
+    color: white; }
+  .banner .banner-title p {
+    font-size: 18px;
+    padding-top: 20px;
+    color: white; }
+.banner .banner-content {
+  position: absolute;
+  padding-top: 7%;
+  top: 60%;
+  left: 50%;
+  margin-top: -67px;
+  margin-left: -70px; }
+  .banner .banner-content a:hover {
+    transition: all 1s; }
+  .banner .banner-content .down {
+    display: block;
+    margin-top: 10%;
+    padding-top: 13%;
+    text-align: center;
+    color: white; }
+  .banner .banner-content .btn-common-banner {
+    margin-top: 20px;
+    font-size: 18px; }
+
+.container-slogan h2 {
+  font-size: 40px; }
+.container-slogan p {
+  font-size: 19px;
+  color: #999999;
+  text-align: justify; }
+
+/***********************/
+.header-icon {
+  background-color: white; }
+  .header-icon .row-icon .icon {
+    padding-bottom: 10px; }
+    .header-icon .row-icon .icon h4 {
+      font-size: 23px; }
+    .header-icon .row-icon .icon p {
+      font-size: 15px;
+      color: #999999; }
+    .header-icon .row-icon .icon img {
+      padding-top: 30px;
+      padding-bottom: 20px; }
+
+/***********************/
+.gallary {
+  display: block;
+  clear: both;
+  padding: 60px 0 70px;
+  text-align: center; }
+  .gallary .des-pic p {
+    font-size: 18px;
+    color: #999999;
+    padding-bottom: 40px; }
+  .gallary .row-pic .pic .project {
+    display: none; }
+  .gallary .row-pic .pic img {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    height: auto; }
+  .gallary .row-pic .pic .pic-hover {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    margin: 0 auto 30px;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    transition: all 0.5s;
+    height: auto;
+    background: rgba(44, 172, 247, 0.8); }
+    .gallary .row-pic .pic .pic-hover .pic-icon a {
+      padding: 10px 12px 10px 12px;
+      margin-left: 5px;
+      border-radius: 2px;
+      display: inline-block;
+      border: 2px solid white;
+      color: white; }
+      .gallary .row-pic .pic .pic-hover .pic-icon a:hover {
+        transition: all 1s;
+        color: black;
+        border: 2px solid #2d3950; }
+    .gallary .row-pic .pic .pic-hover:hover {
+      opacity: 0.8; }
+
+/***********Modal**********/
+.container-slides .modal-body .flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .container-slides .modal-body .flex-container img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px; }
+  .container-slides .modal-body .flex-container .next, .container-slides .modal-body .flex-container .prev {
+    color: #2b669a;
+    transition: 0.6s ease; }
+  .container-slides .modal-body .flex-container .prev {
+    padding: 0 5px 0 0;
+    border-radius: 3px 0 0 3px; }
+    .container-slides .modal-body .flex-container .prev:hover {
+      background-color: rgba(0, 0, 0, 0.8); }
+  .container-slides .modal-body .flex-container .next {
+    padding: 0 0 0 5px;
+    border-radius: 3px 0 0 3px; }
+    .container-slides .modal-body .flex-container .next:hover {
+      background-color: rgba(0, 0, 0, 0.8); }
+
+/************Stay with at***************/
+.stay-wa {
+  width: 100%;
+  display: block;
+  background: url(../home/pic/banner3.jpg) no-repeat center;
+  background-size: cover;
+  padding: 70px 0 105px; }
+  .stay-wa #err-total {
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 1px;
+    border-color: red;
+    padding: 5px; }
+  .stay-wa h3 {
+    font-size: 40px;
+    color: white; }
+  .stay-wa p {
+    font-size: 18px;
+    line-height: 23px;
+    margin: 15px 40px;
+    padding-bottom: 30px;
+    color: #999999; }
+  .stay-wa .form-info .input-text {
+    margin: 0 auto 20px;
+    border-radius: 3px;
+    padding-left: 20px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #999999;
+    color: white; }
+  .stay-wa .form-info .form-message {
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    display: block;
+    margin: 0 auto 10px;
+    height: 150px;
+    background: none;
+    border: 1px solid #999999;
+    color: white; }
+  .stay-wa .form-info .form-submit {
+    margin: 0px auto;
+    text-align: left;
+    color: white; }
+    .stay-wa .form-info .form-submit #form-checkbox {
+      float: left;
+      margin-top: 30px; }
+    .stay-wa .form-info .form-submit #btn-submit {
+      float: right;
+      padding: 10px 50px 10px 50px;
+      margin-top: 20px; }
+
+/*******footer****************/
+.footer .footer-row {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  float: left;
+  color: #999999; }
+.footer .footer-img {
+  margin-top: 20px;
+  text-align: right; }
+  .footer .footer-img a {
+    width: 35px;
+    text-align: center;
+    display: inline-block;
+    height: 35px;
+    padding-top: 5px;
+    border: 1px solid #2e6da4;
+    color: white;
+    background: #2e6da4; }
+
+/*# sourceMappingURL=strict.css.map */

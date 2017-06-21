@@ -1,0 +1,374 @@
+/**********size:> 1201*********/
+@media (min-width:1201px){
+    .banner-title h1{
+        font-size: 100px;
+    }
+    .banner-title hr{
+        width:100%
+    }
+    .row-pic .pic img{
+        display:block;
+        width:100%;
+        height:auto;
+        margin-bottom: 30px;
+    }
+
+    .pic-hover {
+        width: 92.5%;
+        margin: 0 auto 30px;
+        height: auto;
+        padding-top:30%;
+    }
+}
+/******size: 960-1200********/
+@media (min-width: 960px) and (max-width: 1200px){
+    .banner-title h1 {
+        font-size: 90px;
+
+    }
+    .row-pic .pic img{
+        display:block;
+        width:100%;
+        height:auto;
+        margin-bottom: 30px;
+    }
+    .row-pic .pic{
+        width:33%;
+        float:left;
+    }
+    .pic-hover {
+        width: 90.5%;
+        margin: 0 auto 30px;
+        height: auto;
+        padding-top:25%;
+    }
+
+}
+/************size: 768-959******************/
+@media (min-width: 768px) and (max-width: 959px){
+    .banner-img{
+        height:600px
+    }
+    .banner-title{
+        margin-top: -80px;
+        margin-left:-230px;
+    }
+
+    .banner-content{
+        margin-top:-30px;
+        margin-left: -70px;
+    }
+    .banner-content .down{
+        margin-top:25%;
+    }
+    .banner .banner-img img{
+        height: 600px;
+    }
+    .banner-title  h1 {
+        font-size: 70px;
+
+    }
+    #btn-cta{
+        margin-top: 5px;
+        padding:10px 20px 10px 20px;
+        font-size: 16px;
+    }
+    .banner-content  p {
+        font-size: 17px;
+
+    }
+    .container-banner img{
+        margin-top: 200px;
+    }
+    .row-pic .pic img {
+        display:block;
+        width: 100%;
+        height:auto;
+    }
+    .pic-hover{
+        width: 347px;
+        margin:0 auto 30px;
+        height: auto;
+        padding-top:25%;
+
+    }
+    .wrapper{
+        padding: 40px 70px 50px 50px;
+    }
+    .container-slogan p{
+        font-size: 17px;
+    }
+}
+/************size: 480-767******************/
+@media (min-width: 480px) and (max-width: 767px){
+    .container-logo{
+        height: 60px;
+    }
+    .banner{
+        margin-top:70px;
+    }
+    .banner-img{
+        height:400px
+    }
+    .banner-title{
+        margin-top: -80px;
+        margin-left:-170px;
+    }
+    .banner-content{
+        margin-top:-30px;
+        margin-left: -70px;
+    }
+    .banner .banner-img img{
+        height: 400px;
+    }
+    .banner-title h1{
+        font-size:50px;
+    }
+    .banner-title p{
+        font-size: 13px;
+    }
+    .banner-content .down{
+        margin-top:10%;
+    }
+    #btn-cta{
+        margin-top: 5px;
+        padding:5px 15px 5px 15px;
+        font-size: 13px;
+    }
+    .container-logo{
+        padding-left:35px;
+        height: 60px;
+    }
+    .container-slogan h2{
+        font-size: 30px;
+    }
+    .container-slogan p{
+        font-size: 15px;
+
+    }
+    .container-logo{
+        padding-left:70px;
+    }
+    .wrapper{
+        padding: 40px 30px 50px 30px;
+    }
+    #gallary-size{
+        padding:50px 0;
+    }
+    .row-pic .pic img{
+        width: 350px;
+        margin: 0 auto 30px;
+    }
+    .pic-hover{
+        margin:0 auto 30px;
+        width: 350px;
+        /*height: auto;*/
+        padding-top: 100px;
+    }
+    #ft-swa{
+        padding:50px 0;
+        min-height:630px;
+    }
+}
+/************size: 375-479******************/
+@media (min-width: 375px) and (max-width: 479px){
+    .banner{
+        margin-top:70px;
+    }
+    .banner-img{
+        height:300px
+    }
+    .banner-title{
+        margin-top: -80px;
+        margin-left:-150px;
+    }
+    .banner-content{
+        margin-top:10px;
+        margin-left: -90px;
+        padding: 0 30px;
+    }
+    .banner .banner-img img{
+        height: 300px;
+    }
+    .banner-title p{
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    .banner-content .down{
+        margin-top:10%;
+    }
+    #btn-cta{
+        margin-top: 5px;
+        padding:5px 15px 5px 15px;
+        font-size: 14px;
+    }
+    .container-logo{
+        padding-left:35px;
+        height: 60px;
+    }
+    .container-slogan h2{
+        font-size: 30px;
+    }
+    .container-slogan p{
+        font-size: 13px;
+
+    }
+    .wrapper{
+        padding: 30px 30px 50px 30px;
+    }
+    .container-banner img{
+        margin-top:100px;
+    }
+    .icon p{
+        font-size: 12px;
+    }
+    .des-pic h1{
+        font-size: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #gallary-size{
+        padding: 30px 0;
+    }
+    .row-pic .pic .image{
+        width:350px;
+        height:auto;
+        margin:0 auto 30px;
+    }
+    .pic-hover{
+        margin: 0 auto;
+        width: 350px;
+        height:auto;
+        padding-top: 25%;
+    }
+    #ft-swa h3{
+        font-size:30px;
+    }
+    #ft-swa{
+        padding:30px 0;
+        min-height:600px;
+    }
+    #ft-swa .input-text{
+        height: 55px;
+    }
+    #btn-submit{
+        float:right;
+        padding: 10px 30px 10px 30px;
+        margin-bottom: 20px;
+    }
+    .footer .footer-img{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer .footer-row{
+        text-align: center;
+        padding-top:20px;
+        padding-bottom:10px;
+    }
+}
+/************size: < 374 ******************/
+@media (max-width: 374px) {
+    .banner{
+        margin-top:60px;
+    }
+    .banner-img{
+        height:300px
+    }
+    .banner-title{
+        margin-top: -80px;
+        margin-left:-150px;
+    }
+    .banner-content{
+        margin-top:10px;
+        margin-left: -65px;
+        padding: 0 10px;
+    }
+    .banner .banner-img img{
+        height: 300px;
+    }
+    .banner-title p{
+        padding-top: 10px;
+        padding-left:20px;
+        padding-right: 20px;
+        font-size: 12px;
+    }
+    .banner-title hr{
+        width:80%;
+    }
+    .banner-content .down{
+        margin-top:15%;
+    }
+    #btn-cta{
+        margin-top: 15px;
+        padding:5px 15px 5px 15px;
+        font-size: 13px;
+    }
+    .container-logo{
+        padding-left:35px;
+        height: 60px;
+    }
+    .container-slogan h2{
+        font-size: 30px;
+    }
+    .container-slogan p{
+        font-size: 12px;
+
+
+    }
+    .wrapper{
+        padding: 30px 30px 50px 30px;
+    }
+    .container-banner img{
+        margin-top:100px;
+    }
+    .icon p{
+        font-size: 12px;
+    }
+    .des-pic h1{
+        font-size: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #gallary-size{
+        padding: 30px 0;
+    }
+    .row-pic .pic .image{
+        display: block;
+        width:220px;
+        height:auto;
+        margin:0 auto 30px;
+    }
+    .pic-hover{
+        margin: 0 auto;
+        width: 220px;
+        height:auto;
+        padding-top: 60px;
+    }
+    .pic-icon a{
+        padding: 7px 9px;
+    }
+    #ft-swa h3{
+        font-size:30px;
+    }
+    #ft-swa{
+        padding:30px 0;
+        min-height:600px;
+    }
+    #ft-swa .input-text{
+        height: 55px;
+    }
+    #btn-submit{
+        float:right;
+        padding: 10px 30px 10px 30px;
+        margin-bottom: 20px;
+    }
+    .footer .footer-img{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer .footer-row{
+        text-align: center;
+        padding-top:20px;
+        padding-bottom:10px;
+    }
+}
