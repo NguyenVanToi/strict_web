@@ -137,14 +137,24 @@ $(document).ready(function () {
     });
 // demo banner
     $(".add-banner .demo-banner").click(function(){
-        var title=$(".title-banner").val();
-        var des=$(".des-banner").val();
+        var title=$(".title").val();
+        var des=$(".des").val();
         var update=$(".update").val();
         $("#title").val(title);
         $("#des").val(des);
-        $("#update-banner").val(update);
+        $("#update").val(update);
     });
-
+//message
+    $(".btn-mess").click(function () {
+        var id=$(".id-show").text();
+        var fullname=$(".name-show").text();
+        var email=$(".email-show").text();
+        var message=$(".mess").text();
+        $("#id").val(id);
+        $("#fullname").val(fullname);
+        $("#email").val(email);
+        $("#message").val(message);
+    })
 
 });
 

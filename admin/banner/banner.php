@@ -10,7 +10,7 @@
 ?>
         <div class="row">
             <div class="col-md-4">
-                <img src="<?php echo $rows['image'];?>" alt="banner1" height="170px" width="100%">
+                <img src="<?php echo $rows['image'];?>" alt="banner1"  width="100%">
                 <a href="admin.php?page-layout=edit-banner&id=<?php echo $rows['ID'];?>"><button type="button" class="btn btn-info btn-edit"><i class="fa fa-edit fa-editbanner"></i></button></a>
                 <a onclick="return confirm('Bạn muốn xóa Banner này ?')" href="admin.php?page-layout=del-banner&id=<?php echo $rows['ID'];?>" >
                     <button <?php if($num<=3) echo "disabled";?> type="button" class="btn btn-danger btn-del"><i class="fa fa-trash trash-icon"></i></button>

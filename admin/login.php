@@ -53,10 +53,10 @@
             <div class="col-sm-6 col-md-offset-4 col-md-4 col-lg-4">
                 <form method="post" class="login-form">
                     <div class="form-group input-text">
-                        Tên đăng nhập: <input class="form-control" type="text" name="user" placeholder="User" value="<?php ////if(isset($_COOKIE['username'])) echo $_COOKIE['username'];?>">
+                        Tên đăng nhập: <input class="form-control" type="text" name="user" placeholder="User" value="<?php if(isset($_COOKIE['username'])) echo $_COOKIE['username'];?>">
                     </div>
                     <div class="form-group">
-                        Password: <input class="form-control" type="password" name="password" placeholder="Password" value="<?php ////if(isset($_COOKIE['password'])) echo $_COOKIE['password'];?>">
+                        Password: <input class="form-control" type="password" name="password" placeholder="Password" value="<?php if(isset($_COOKIE['password'])) echo $_COOKIE['password'];?>">
                     </div>
                     <div class="form-group">
                         <div class="checkbox">

@@ -27,7 +27,7 @@
                         <td><?php echo $rows['ID'];?></td>
                     </tr>
                     <tr>
-                        <td>Source image project</td>
+                        <td>Source</td>
                         <td id="source-pro"><?php echo $rows['source-img'];?></td>
                     </tr>
                     <tr>

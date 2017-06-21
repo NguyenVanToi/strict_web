@@ -9,12 +9,13 @@
     $dir = 'upfile/banner/';
     $name = 'upload-img';
     $anh=$dir . $_FILES[$name]['name'];
+    $time=gmdate("Y-m-d H:i:s", time()+7*3600);
     if(isset($_POST['add'])) {
         $title=$_POST['title'];
         $description=$_POST['description'];
-        $update=$_POST['update'];
+        $update=$_POST['update-banner'];
         $source=$_POST['img-banner'];
-        $query="insert into strict.banners (image, title, description, `update`) VALUE ('$source', '$title', '$description', '$update')";
+        $query="insert into strict.banners (image, title, description, `update`) VALUE ('$source', '$title', '$description', '$time')";
         $result=mysqli_query($link, $query);
         if($result){
             header("location: admin.php?page-layout=banner");
@@ -26,12 +27,12 @@
 ?>
 <h1 class="text-center">Add new banner</h1>
     <div class="row add-banner">
-        <div class="col-sm-6 col-md-offset-2 col-md-8 col-lg-4">
+        <div class="col-sm-6 col-md-offset-2 col-md-8">
             <form method="post" enctype="multipart/form-data" action="admin.php?page-layout=add-banner">
-
-                <input type="file" name="upload-img" id="filetoUpload">
-                <input type="submit" name="uploadclick" value="Upload">
-                <span><?php
+                <div class="form-group">
+                    <input class="form-control" type="file" name="upload-img" id="filetoUpload" required>
+                    <button type="submit" name="uploadclick" value="Upload">Upload file image</button>
+                    <span><?php
                         if(isset($_POST['uploadclick'])){
                             uploadFile($name, $_FILES[$name]['type'], 3, $dir);
                             if ($_FILES[$name]['error'] > 0) {
@@ -43,19 +44,19 @@
                         }
                         ?>
                 </span>
+                </div>
+                <div class="form-group">
+                    Title banner: <input class="form-control title" type="text" value="">
+                </div>
+                <div class="form-group">
+                    Description banner: <input class="form-control input-description des" value="">
+                </div>
+                <div class="form-group">
+                    Update: <input class="form-control update" value="<?php echo $time;?>" disabled>
+                </div>
             </form>
-            <form>
-                <div class="form-group">
-                    Title banner: <input class="form-control title-banner" required type="text">
-                </div>
-                <div class="form-group">
-                    Description banner: <input class="form-control input-description des-banner">
-                </div>
-                <div class="form-group">
-                    Update: <input class="form-control update" type="date">
-                </div>
-            </form>
-            <button class="btn btn-primary demo-banner" data-toggle="modal" data-target="#modal-banner" name="demo">Demo</button>
+
+            <button class="btn btn-primary demo-banner" data-toggle="modal" data-target="#modal-banner" name="demo">Demo <i class="fa fa-plus-circle plus-fa"></i></button>
 
 
             <div class="modal fade" id="modal-banner" tabindex="-1" role="dialog">
@@ -78,7 +79,7 @@
                                     Description banner: <input class="form-control" id="des" name="description">
                                 </div>
                                 <div class="form-group">
-                                    Update: <input class="form-control" id="update-banner" name="update">
+                                    Update: <input class="form-control" id="update" name="update-banner" disabled>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

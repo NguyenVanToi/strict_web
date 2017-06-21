@@ -9,18 +9,22 @@
     while ($rows=mysqli_fetch_array($result)){
         ?>
         <div class="row">
-            <div class="col-md-4">
-                <img src="<?php echo $rows['source-icon'];?>" alt="banner1" height="170px" width="100%">
+            <div class="col-md-3">
+                <img src="<?php echo $rows['source-icon'];?>" alt="banner1"  width="100%">
                 <a href="admin.php?page-layout=edit-simple&id=<?php echo $rows['ID'];?>"><button type="button" class="btn btn-info btn-edit"><i class="fa fa-edit fa-editbanner"></i></button></a>
                 <a onclick="return confirm('Bạn muốn xóa sub page này ?')" href="admin.php?page-layout=del-simple&id=<?php echo $rows['ID'];?>" >
                     <button type="button" <?php if($num<=3) echo "disabled";?> class="btn btn-danger btn-del"><i class="fa fa-trash trash-icon"></i></button>
                 </a>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-9">
                 <table class="table table-striped table-hover">
                     <tbody>
                     <tr>
                         <th colspan="2" class="text-center">Sub page <?php echo $rows['ID'];?></th>
+                    </tr>
+                    <tr>
+                        <td>Source icon</td>
+                        <td><?php echo $rows['source-icon'];?></td>
                     </tr>
                     <tr>
                         <td>ID</td>
