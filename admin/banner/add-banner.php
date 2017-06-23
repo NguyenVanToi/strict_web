@@ -26,7 +26,7 @@
 }
 ?>
 <h1 class="text-center">Add new banner</h1>
-    <div class="row add-banner">
+    <div class="row content-common demo-common">
         <div class="col-sm-6 col-md-offset-2 col-md-8">
             <form method="post" enctype="multipart/form-data" action="admin.php?page-layout=add-banner">
                 <div class="form-group">

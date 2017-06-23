@@ -32,7 +32,7 @@ if(isset($_POST['edit'])) {
 }
 ?>
 <h1 class="text-center">Edit banner</h1>
-<div class="row add-banner">
+<div class="row demo-common">
     <div class="col-sm-6 col-md-offset-2 col-md-8">
         <form method="post" enctype="multipart/form-data" action="admin.php?page-layout=edit-banner&id=<?php echo $_GET['id']; ?>">
             <div class="form-group">

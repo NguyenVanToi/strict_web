@@ -136,7 +136,7 @@ $(document).ready(function () {
         }
     });
 // demo banner
-    $(".add-banner .demo-banner").click(function(){
+    $(".demo-common .demo-banner").click(function(){
         var title=$(".title").val();
         var des=$(".des").val();
         var update=$(".update").val();
@@ -146,15 +146,25 @@ $(document).ready(function () {
     });
 //message
     $(".btn-mess").click(function () {
-        var id=$(".id-show").text();
-        var fullname=$(".name-show").text();
-        var email=$(".email-show").text();
-        var message=$(".mess").text();
+        var id=$(this).parents(".row-swa").children(".id-show").text();
+        var fullname=$(this).parents(".row-swa").children(".name-show").text();
+        var email=$(this).parents(".row-swa").children(".email-show").text();
+        var message=$(this).parents(".row-swa").children(".mess").text();
         $("#id").val(id);
         $("#fullname").val(fullname);
         $("#email").val(email);
-        $("#message").val(message);
+        $("#message").text(message);
     })
-
+//    social link
+    $(".edit-link").click(function () {
+        var namesocial=$(this).parents(".social-link").children("#name-show").text();
+        var linksocial=$(this).parents(".social-link").children("#link-show").text();
+        $("#social-name").attr("readonly", true);
+        $("#social-name").val(namesocial);
+        $("#linksocial").val(linksocial);
+        // $("#form-link").attr("action", "admin.php?page-layout=edit-linksocial.php&name=" + namesocial);
+    })
+//logout
+    $('[data-toggle="tooltip"]').tooltip();
 });
 

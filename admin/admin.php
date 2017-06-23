@@ -27,19 +27,42 @@ $page=$_GET['page-layout'];
     if(isset($_SESSION['user']) && isset($_SESSION['password'])){
     ?>
 <div class="container-body">
-    <div class="container-logo collapse navbar-collapse">
-        <img src="../home/pic/logo.png" alt="logo">
-        <ul class="nav navbar-nav">
-            <li class="abc"><a href="admin.php?page-layout=banner">Banner</a></li>
-            <li><a href="admin.php?page-layout=simple">Simple</a></li>
-            <li><a href="admin.php?page-layout=showcase"> Showcase</a></li>
-            <li><a href="admin.php?page-layout=staywithat">Staywithat</a></li>
-            <li><a href="admin.php?page-layout=social">Socical</a></li>
-            <li><a href="logout.php"><i class="fa fa-sign-out logout-fa"></i></a></li>
-        </ul>
+    <nav class="navbar navbar-inverse bar-container">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle bar-tog" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+              <img src="../home/pic/logo.png" alt="logo">
+            </div>
+            <div><a href="logout.php"><i class="fa fa-sign-out logout-fa" title="Logout" data-toggle="tooltip"></i></a></div>
 
-    </div>
-    <hr>
+            <div class="collapse navbar-collapse bar-coll" id="myNavbar">
+                <ul class="nav navbar-nav list-nav">
+                    <li><a href="admin.php?page-layout=banner">Banner</a></li>
+                    <li><a href="admin.php?page-layout=simple">Simple</a></li>
+                    <li><a href="admin.php?page-layout=showcase"> Showcase</a></li>
+                    <li><a href="admin.php?page-layout=staywithat">Staywithat</a></li>
+                    <li><a href="admin.php?page-layout=social">Socical</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--        <ul class="nav navbar-nav">-->
+
+
+<!--                <li><a href="admin.php?page-layout=banner">Banner</a></li>-->
+<!--            <li><a href="admin.php?page-layout=simple">Simple</a></li>-->
+<!--            <li><a href="admin.php?page-layout=showcase"> Showcase</a></li>-->
+<!--            <li><a href="admin.php?page-layout=staywithat">Staywithat</a></li>-->
+<!--            <li><a href="admin.php?page-layout=social">Socical</a></li>-->
+<!--            <li><a href="logout.php"><i class="fa fa-sign-out logout-fa" title="Logout" data-toggle="tooltip"></i></a></li>-->
+<!--        </ul>-->
+
+
+
 
 
     <div class="container container-content">

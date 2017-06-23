@@ -1,43 +1,71 @@
 body{
   background-color:white;
 }
-.add-banner{
-  margin-top: 30px;
+//**************
+.content-common{
+  margin-top: 50px;
 }
 .container-body{
   position: relative;
   top:0;
   height: 100%;
 }
-.container-logo{
+/*******NAVBAR******/
+.bar-container{
   position: fixed;
   height: 90px;
   z-index: 2;
   width:100%;
   background:#f6f9f9;
   top:0;
-  padding:20px 130px 50px 130px;
+  padding:20px 40px 50px 40px;
   img{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
-  .nav{
-    float: right;
+  .list-nav{
+    //float: right;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    li{
-      display: inline;
-      .logout-fa{
-        font-size: 20px;
-      }
+  }
+  .bar-tog{
+    .icon-bar{
+      color: #337ab7;
+      background-color: #337ab7;
     }
   }
+  .bar-coll{
+    border: none;
+    background-color: #f6f9f9;
+    padding-right: 20px;
+    float: right;
+    .navbar-nav{
+      li a{
+        color: #337ab7;
+        &:hover{
+          color: black;
+        }
+      }
+    }
+
+  }
+
+  .logout-fa{
+    font-size: 20px;
+    float: right;
+    margin-top:15px;
+    display: block;
+  }
+
 }
 .container-content{
-  padding-top: 90px;
+  margin-top: 90px;
 }
-
-//*****************LOGIN
+.navbar{
+  background-color: #f6f9f9;
+  border: none;
+}
+//*****************LOGIN************
 .checkbox{
   float: left;
 }
@@ -51,7 +79,7 @@ body{
 
 }
 
-/********button************/
+/********BUTTON************/
 
 .banners, .showcase, .staywithat, .simple{
   .btn-edit{
@@ -60,7 +88,6 @@ body{
     padding:10px 15px;
   }
   .btn-add{
-    margin:15px;
     padding:10px 25px;
   }
   .btn-del{
@@ -88,13 +115,13 @@ body{
     font-size: 20px;
   }
 }
+.fa-editbanner{
+  padding-left:5px;
+}
 /***************edit banner**********/
 .input-description{
   height: 100px;
   padding-bottom: 50px;
-}
-.fa-editbanner{
-  padding-left:5px;
 }
 //*********social***********
 .social{
@@ -108,4 +135,92 @@ body{
 #message{
   height: 100px;
   padding-bottom: 50px;
+}
+//*********************RESPONSIVE*****************//
+@media (min-width: 377px) and (max-width:767px){
+  .bar-container{
+    img{
+      margin-top: -15px;
+    }
+    .bar-tog{
+      margin-right:40px;
+    }
+    .logout-fa{
+      margin-top: -47px;
+      margin-right: -30px;
+    }
+    .bar-coll{
+      margin-top: 15px;
+      float: none;
+    }
+  }
+  //BANNER, SIMPLE,SHOWCASE, STAYWITHAT, SOCIAL
+  .banners, .simple,.showcase,.staywithat{
+    padding-top:30px;
+    .btn-add{
+      padding: 10px 15px;
+      float: right;
+    }
+    .btn-edit{
+      margin-bottom: 15px;
+    }
+  }
+  .social{
+    .btn-save{
+      margin-left: 15px
+    }
+    .name-show{
+      display: none;
+    }
+  }
+  .staywithat {
+    .email-show {
+      display: none;
+    }
+    .mess{
+      text-overflow:ellipsis;
+    }
+  }
+}
+@media (max-width: 376px) {
+  .bar-container{
+    padding:20px 20px 50px 40px;
+    .logout-fa{
+      margin-top: -55px;
+      margin-right: -30px;
+    }
+    .bar-coll{
+      float: none;
+    }
+  }
+  //BANNER, SIMPLE,SHOWCASE, STAYWITHAT, SOCIAL
+  .banners, .simple,.showcase,.staywithat {
+    padding-top: 30px;
+    .btn-add {
+      padding: 10px 15px;
+      float: right;
+    }
+    .btn-edit{
+      margin-bottom: 15px;
+    }
+    .totalrow{
+      font-size: 25px;
+    }
+  }
+  .staywithat {
+    .id-show {
+      display: none;
+    }
+    .email-show {
+      display: none;
+    }
+    .mess{
+      text-overflow:ellipsis;
+    }
+  }
+  .social{
+    .name-show{
+      display: none;
+    }
+  }
 }

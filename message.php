@@ -14,6 +14,8 @@
         $result=mysqli_query($link, $query);
         if($result){
            header("location: strict.php");
+        }else{
+            echo "fail".mysqli_error($link);
         }
     }
 ?>
